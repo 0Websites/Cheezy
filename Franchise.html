@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        background: #2c380c;
+    }
+</style>
+<body>
+    <div class="logo">
+        <img width="100px" src="Images/logo.jpg" alt="">   <img id="hambar" src="Images/ham.png" alt="">
+    </div>
+    <div class="navbar-hide" data-aos="fade-down" id="hide">
+        <a href="index.html">Home</a>
+        <a href="#about">About us</a>
+        <a href="menu.html">Menu</a>
+        <a href="#contact">Contact us</a>
+        <a href="Franchise.html">Franchise</a>
+        <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order">Order Now</a>
+        <a id="close">Close</a>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About us</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#contact">Contact us</a>
+        <a href="Franchise.html">Franchise</a>
+        <a id="action-btn" href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order">Order Now</a>
+    </div>
+
+    <div class="container">
+        <p id="title">Become a Cheezy ShakesnDessert Owner Today</p>
+        <p>Fill this form to get a call back from one of our franchise agents or call us now.</p>
+        <form id="franchiseForm">
+            <input type="text" name="name" placeholder="Full Name*" class="full-width" required>
+            <input type="email" name="email" placeholder="Email*" class="full-width" required>
+            <input type="text" name="phone" placeholder="+91 | Enter Number Here" class="full-width" required>
+            <select name="occupation">
+                <option value="">Occupation*</option>
+                <option value="Business">Business</option>
+                <option value="Self-Employed">Self-Employed</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="pincode" placeholder="Pincode">
+            <input type="text" name="experience" placeholder="Any prior experience?">
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <section id="section-prop" class="footer">
+        <p>Cheezy ShakesnDessert | Designed & Developed by Vedansh Derashri</p>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
