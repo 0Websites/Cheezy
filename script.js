@@ -1,3 +1,17 @@
+const hamBtn = document.getElementById("hambar");
+    const closeBtn = document.getElementById("close");
+    const menu = document.getElementById("hide");
+
+    hamBtn.addEventListener("click", () => {
+        menu.style.display = "flex"; // Show the div
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menu.style.display = "none"; // Hide the div
+    });
+
+  
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 20,
@@ -40,21 +54,3 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
-
-
-
-
-
-const hamBtn = document.getElementById("hambar");
-    const closeBtn = document.getElementById("close");
-    const menu = document.getElementById("hide");
-
-    hamBtn.addEventListener("click", () => {
-        menu.style.display = "flex"; // Show the div
-    });
-
-    closeBtn.addEventListener("click", () => {
-        menu.style.display = "none"; // Hide the div
-    });
-
-  
