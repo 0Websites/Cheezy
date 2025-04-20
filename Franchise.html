@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #myForm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    input,textarea{
+        width: 100%;
+        padding: 15px;
+        margin: 10px;
+        background: #f1f1f1;
+        border: none;
+        border-radius: 10px;
+    }
+</style>
+<body>
+
+    <div class="navbar" data-aos="fade-down">
+        <div class="logo">
+            <img style="border-radius: 50%;width: 60px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVJDwbLxg8DdXRXqD1Q965L01yeVBirwaE7ZLL8oWHmJSHAoejVW0rRrkU5_fB4m7lzy3esLUVduxIavfxc6JLEWW4rx7J6nVka_N71LQJzNDDcrJutiUnYdlH3lEjLFunhs97_nJXIL1HwztrVhyphenhyphenfOiCixRHh_xo1bWH0phvXWY2zaSe5MS-PBvF3uM0/s16000/logo.jpg" alt="">
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#abt-link">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="Franchise.html">Franchise</a>
+            <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order" id="action-btn-2">Order Now</a>
+        </div>
+        <img id="hambar" width="30px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWpeZrm6dpxs9eJTJBe5yyr3V7HsNPcYZat1IO-GZX5nRhbxIx5DbtC8DfdTysmfaT5jAXudYtgXMv4j-1qTFG7TqRs5cZtJWSLDYW2MRAGLauykZnuoSkFGewtcTq45-o39DFb5VieHP09ETqG8Ny9M_VF7vtSHhBwmvJVj9M6IBAQ57eIgX_bElrb7M/s320/ham.png" alt="">
+    </div>
+    
+    <div class="res-nav" data-aos="fade-down" id="res-nav">
+        <div class="links" id="res-nav">
+            <a style="background: #223800; padding: 10px; border-radius: 10px;transition: linear .3s;transform: translateY(10px);width: 50px; color: #fff;font-weight: bold;" id="close">X</a>
+            <a href="index.html">Home</a>
+            <a href="#abt-link">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="Franchise.html">Franchise</a>
+            <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order">Order Now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <p id="title">Franchise Form</p>
+        <p>Fill this form to get a call back from one of our franchise agents or call us now.</p>
+        <form id="myForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="number" id="phone" name="phone" placeholder="Phone" required>
+            <input type="text" id="profile" name="profile" placeholder="profile" required>
+            <input type="text" id="city" name="city" placeholder="city" required>
+            <input type="interest" id="interest" name="interest" placeholder="Are you interested" required>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button id="action-btn-2" type="submit">Submit</button>
+        </form>
+        
+    </div>
+    <div class="footer">
+      Cheezy Shakes & desserts - Mayank Bhawsar | Developed By Vedansh Derashri
+    </div>
+</body>
+
+<script>
+    (function(){
+        emailjs.init("onaYLTxGw8_PH2yd2");  // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.send("service_q1513fk", "template_d1omcjf", {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            city: document.getElementById("city").value,
+            interest: document.getElementById("interest").value,
+            profile: document.getElementById("profile").value,
+            message: document.getElementById("message").value
+        })
+        
+        .then(response => {
+            alert("Email sent successfully!");
+            console.log("Success:", response);
+        })
+        .catch(error => {
+            alert("Failed to send email.");
+            console.log("Error:", error);
+        });
+    });
+</script>
+<script src="hambar.js"></script>
+<script src="loader.js"></script>
+</html>
