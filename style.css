@@ -71,7 +71,10 @@ body{
     align-items: center;
     justify-content: center;
     transition: linear .3s;
-    height: 0%;
+    position: fixed;
+    z-index: 100;
+    width: 90%;
+    background: #fff;
 }
 .res-nav .links{
     background: #fff;
