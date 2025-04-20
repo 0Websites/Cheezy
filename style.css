@@ -19,7 +19,7 @@ body{
     position: sticky;
     z-index: 100;
     top: 0;
-    background: url('Images/navbg.png');
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPr85c0R2-PIzgjbAr9QfYGIA4DJ-y3xhLabP4GQCvNVGXJSlJbsRju2LnzsM_GqLJrW2vleFwYHNGij8A0tDnrTD1xHwW3Yc88MX8baoDd-Xy_yKdYB1g6nlD_BuPE0kLFY90XbOyY4DDwi4yiHyU1xq-xNYAU-_1EOeg_vCYM9LX_F2IMw2r5Mr7iCM/s16000/navbg.png');
     background-size: cover;
     display: flex;
     align-items: center;
