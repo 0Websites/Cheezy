@@ -32,29 +32,32 @@
 </style>
 <body>
 
-    <div class="navbar" data-aos="fade-down">
+    <div class="intro">
         <div class="logo">
-            <img style="border-radius: 50%;width: 60px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVJDwbLxg8DdXRXqD1Q965L01yeVBirwaE7ZLL8oWHmJSHAoejVW0rRrkU5_fB4m7lzy3esLUVduxIavfxc6JLEWW4rx7J6nVka_N71LQJzNDDcrJutiUnYdlH3lEjLFunhs97_nJXIL1HwztrVhyphenhyphenfOiCixRHh_xo1bWH0phvXWY2zaSe5MS-PBvF3uM0/s16000/logo.jpg" alt="">
+            <img style="border-radius: 50%;width: 100px;"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVJDwbLxg8DdXRXqD1Q965L01yeVBirwaE7ZLL8oWHmJSHAoejVW0rRrkU5_fB4m7lzy3esLUVduxIavfxc6JLEWW4rx7J6nVka_N71LQJzNDDcrJutiUnYdlH3lEjLFunhs97_nJXIL1HwztrVhyphenhyphenfOiCixRHh_xo1bWH0phvXWY2zaSe5MS-PBvF3uM0/s16000/logo.jpg"
+                alt="">
+
+            <span id="hamburger" >≡</span>
         </div>
-        <div class="links">
+        <div class="navbar">
             <a href="index.html">Home</a>
-            <a href="#abt-link">About</a>
+            <a href="index.html#abt-link">About Us</a>
             <a href="menu.html">Menu</a>
+            <a href="index.html#contact">Contact</a>
             <a href="Franchise.html">Franchise</a>
-            <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order" id="action-btn-2">Order Now</a>
+            <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order" id="action-btn">Order Now</a>
         </div>
-        <img id="hambar" width="30px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWpeZrm6dpxs9eJTJBe5yyr3V7HsNPcYZat1IO-GZX5nRhbxIx5DbtC8DfdTysmfaT5jAXudYtgXMv4j-1qTFG7TqRs5cZtJWSLDYW2MRAGLauykZnuoSkFGewtcTq45-o39DFb5VieHP09ETqG8Ny9M_VF7vtSHhBwmvJVj9M6IBAQ57eIgX_bElrb7M/s320/ham.png" alt="">
-    </div>
-    
-    <div class="res-nav" data-aos="fade-down" id="res-nav">
-        <div class="links" id="res-nav">
-            <a style="background: #223800; padding: 10px; border-radius: 10px;transition: linear .3s;transform: translateY(10px);width: 50px; color: #fff;font-weight: bold;" id="close">X</a>
+        <div class="sidebar" id="sidebar">
             <a href="index.html">Home</a>
-            <a href="#abt-link">About</a>
+            <a href="index.html#abt-link">About Us</a>
             <a href="menu.html">Menu</a>
+            <a href="index.html#contact">Contact</a>
             <a href="Franchise.html">Franchise</a>
-            <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order">Order Now</a>
+            <a href="https://www.zomato.com/mandsaur/chezzy-shakes-mandsaur-locality-mandsaur-city/order" >Order Now</a>
         </div>
+        <div class="overlay" id="overlay"></div>
+        <script src="hambar.js"></script>
     </div>
 
     <div class="container">
@@ -68,7 +71,7 @@
             <input type="text" id="city" name="city" placeholder="city" required>
             <input type="interest" id="interest" name="interest" placeholder="Are you interested" required>
             <textarea id="message" name="message" placeholder="Your Message"></textarea>
-            <button id="action-btn-2" type="submit">Submit</button>
+            <button id="action-btn" type="submit">Submit</button>
         </form>
         
     </div>

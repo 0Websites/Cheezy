@@ -1,13 +1,12 @@
 
-const hamBtn = document.getElementById("hambar");
-const closeBtn = document.getElementById("close");
-const menu = document.getElementById("res-nav");
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-hamBtn.addEventListener("click", () => {
-    menu.style.display = "flex"; // Show the div
-});
+function toggleMenu() {
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
 
-closeBtn.addEventListener("click", () => {
-    menu.style.display = "none"; // Hide the div
-});
-
+hamburger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
