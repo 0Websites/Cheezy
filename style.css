@@ -423,3 +423,38 @@ marquee h1{
     opacity: 1;
     visibility: visible;
   }
+
+
+  /* jiodhdjf */
+  .menu-section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    background: #FCF259;
+    border-radius: 8px;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-family: roboto;
+  }
+  .menu-item:hover {
+    box-shadow: 4px 4px 0 #85193C;
+    border: 1px solid #350011;
+  }
+  .menu-name {
+    font-size: 20px;
+    color: #222;
+    text-align: left;
+  }
+  .menu-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #350011;
+  }
